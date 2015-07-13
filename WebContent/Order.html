@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order pizza</title>
+<style>
+.buttonStyle {
+	width: 100px;
+	height: 30px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.buttonStyle:hover {
+	background: background;
+}
+
+body {
+	background-image:
+		url('http://i.huffpost.com/gen/1554236/images/o-XBOX-PIZZA-HUT-facebook.jpg');
+}
+</style>
+</head>
+<body>
+
+
+	<form id="form1" method="post">
+		<fieldset>
+			<legend>Customer</legend>
+			<label for="name">Name</label> <input type="text" name="name"
+				id="name" required="required"> <br> <label
+				for="sureName">Surename</label> <input type="text" name="sureName"
+				id="sureName" required="required"> <br> <label
+				for="email">Email</label> <input type="email" name="email"
+				id="email"> <br> <label for="type">Type</label> <input
+				type="radio" name="choice" value="Individual" checked="checked">
+			Individual <input type="radio" name="choice" value="Bussiness">
+			Bussiness
+		</fieldset>
+
+		<fieldset>
+			<legend>Pizza</legend>
+			<label for="name">Name</label> <input type="text" name="name"
+				id="name"> <br> <label for="type">Type</label> <select>
+				<option value="normal">Normal</option>
+				<option value="big">Big</option>
+				<option value="large">Large</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Suggested delivery date:</legend>
+			<input type="date" pattern="\d{1,2}/\d{1,2}/\d{4}" />
+		</fieldset>
+
+		<fieldset>
+			<legend>Additional data:</legend>
+			<textarea></textarea>
+		</fieldset>
+		<input type="button"
+			onclick="location.href='file:///C:/Staz/workspace/FrontEnd/WebContent/PizzaOrders.html';"
+			value="Order pizza" class="buttonStyle" />
+	</form>
+</body>
+</html>
